@@ -5,6 +5,7 @@
   "scripts": {
     "build": "rspeedy build",
     "check": "biome check --write",
+    "fix": "biome check --fix --unsafe",
     "dev": "rspeedy dev",
     "format": "biome format --write",
     "preview": "rspeedy preview"
