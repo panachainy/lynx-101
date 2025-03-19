@@ -9,11 +9,21 @@
     "useIgnoreFile": true
   },
   "formatter": {
-    "indentStyle": "space"
+    "enabled": true,
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "lineEnding": "lf"
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single"
+      "quoteStyle": "single",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "semicolons": "asNeeded",
+      "trailingCommas": "all"
     }
   },
   "css": {
@@ -25,6 +35,11 @@
     "enabled": true,
     "rules": {
       "recommended": true
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": false
     }
   }
 }
