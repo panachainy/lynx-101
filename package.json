@@ -5,9 +5,9 @@
   "scripts": {
     "build": "rspeedy build",
     "check": "biome check --write",
-    "fix": "biome check --fix --unsafe",
+    "check:fix": "biome check --fix",
+    "ci": "biome ci",
     "dev": "rspeedy dev",
-    "format": "biome format --write",
     "preview": "rspeedy preview"
   },
   "dependencies": {
