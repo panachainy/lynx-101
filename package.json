@@ -9,6 +9,7 @@
     "ci": "biome ci",
     "format": "biome format --write",
     "dev": "rspeedy dev",
+    "dev:doc": "RSDOCTOR=true rspeedy dev",
     "preview": "rspeedy preview"
   },
   "dependencies": {
