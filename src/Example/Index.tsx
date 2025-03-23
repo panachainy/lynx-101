@@ -74,21 +74,29 @@ function Example() {
     mutation.mutate()
   }
 
-  return (
-    <view className="container">
-      {isLoading ? (
-        <text className="container__loading">Loading...</text>
-      ) : isError ? (
+  const renderContent = () => {
+    if (isLoading) {
+      return <text className="container__loading">Loading...</text>
+    }
+
+    if (isError) {
+      return (
         <text className="container__error">
           {error?.message || 'Error fetching posts'}
         </text>
-      ) : (
-        posts?.map((post) => (
-          <view key={post.id} className="container__post">
-            <text className="container__post-text">{`${post.id} : ${post.title}`}</text>
-          </view>
-        ))
-      )}
+      )
+    }
+
+    return posts?.map((post) => (
+      <view key={post.id} className="container__post">
+        <text className="container__post-text">{`${post.id} : ${post.title}`}</text>
+      </view>
+    ))
+  }
+
+  return (
+    <view className="container">
+      {renderContent()}
 
       {/* Button to trigger mutation */}
       <view bindtap={deleteFirstPost} className="container__button">
