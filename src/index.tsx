@@ -1,7 +1,7 @@
 import { root } from '@lynx-js/react'
 
-import { App } from './App.js'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { App } from './App.js'
 
 const queryClient = new QueryClient()
 

@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from '@lynx-js/react'
 
 import './Index.css'
+import { useNavigate } from 'react-router'
 import arrow from '../assets/arrow.png'
 import lynxLogo from '../assets/lynx-logo.png'
 import reactLynxLogo from '../assets/react-logo.png'
-import { useNavigate } from 'react-router'
 
 export function Home() {
   const nav = useNavigate()
