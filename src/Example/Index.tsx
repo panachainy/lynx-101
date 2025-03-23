@@ -30,7 +30,7 @@ const deletePost = async (postId: number) => {
   return postId
 }
 
-export function ExamplePage() {
+function Example() {
   const queryClient = useQueryClient()
 
   // Fetch posts
@@ -97,3 +97,5 @@ export function ExamplePage() {
     </view>
   )
 }
+
+export { Example }

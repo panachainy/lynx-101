@@ -1,6 +1,6 @@
 import { MemoryRouter, Route, Routes } from 'react-router'
-import { Example } from './Example'
-import { Home } from './Home'
+import { Example } from './Example/Index.jsx'
+import { Home } from './Home/Index.jsx'
 
 export function App() {
   return (
