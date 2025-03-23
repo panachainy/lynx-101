@@ -1,5 +1,12 @@
-import { Home } from './Home/Index.tsx'
+import { MemoryRouter, Route, Routes } from 'react-router'
+import { Home } from './Home'
 
 export function App() {
-  return <Home />
+  return (
+    <MemoryRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </MemoryRouter>
+  )
 }
