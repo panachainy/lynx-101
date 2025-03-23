@@ -4,8 +4,10 @@ import './Index.css'
 import arrow from '../assets/arrow.png'
 import lynxLogo from '../assets/lynx-logo.png'
 import reactLynxLogo from '../assets/react-logo.png'
+import { useNavigate } from 'react-router'
 
 export function Home() {
+  const nav = useNavigate()
   const [alterLogo, setAlterLogo] = useState(false)
 
   useEffect(() => {
@@ -33,7 +35,12 @@ export function Home() {
           <text className="Subtitle">on Lynx</text>
         </view>
         <view className="Content">
-          <image src={arrow} className="Arrow" />
+          <image
+            src={arrow}
+            bindtap={() => nav('/example')}
+            className="Arrow"
+          />
+
           <text className="Description">Tap the logo and have fun!</text>
           <text className="Hint">
             Edit<text style={{ fontStyle: 'italic' }}>{' src/App.tsx '}</text>
