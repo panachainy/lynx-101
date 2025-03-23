@@ -46,3 +46,4 @@ To run on IOS, you need to install the pods:
 [ref](https://github.com/lynx-family/lynx-devtool/releases)
 
 Download & install on MacOS
+![alt text](docs/debugging.png)
