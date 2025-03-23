@@ -47,3 +47,7 @@ To run on IOS, you need to install the pods:
 
 Download & install on MacOS
 ![alt text](docs/debugging.png)
+
+## Plugins
+
+[Tailwind](https://github.com/rspack-contrib/rsbuild-plugin-tailwindcss)
