@@ -28,7 +28,13 @@ You can start editing the page by modifying `src/App.tsx`. The page auto-updates
 
 To run on IOS, you need to install the pods:
 
-```bash
-mkdir -p LynxExplorer-arm64.app/
-tar -zxf LynxExplorer-arm64.app.tar.gz -C LynxExplorer-arm64.app/
-```
+1. Extract tar.gx -> `LynxExplorer-arm64.app`:
+
+    ```bash
+    mkdir -p LynxExplorer-arm64.app/
+    tar -zxf LynxExplorer-arm64.app.tar.gz -C LynxExplorer-arm64.app/
+    ```
+
+2. install LynxExplorer-arm64.app to simulator
+
+    - drag file to simulator
